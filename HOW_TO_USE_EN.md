@@ -10,7 +10,6 @@
 - [Create a workspace](#create-a-workspace)
 - [Create Two Topics](#create-two-topics)
 - [Upload a stream Jar](#upload-a-stream-jar)
-  - [[How to download jar?](https://github.com/oharastream/ohara-quickstart/releases/download/untagged-cf0d3622e4d0954dcb7a/ohara-streamapp.jar)](#-how-to-download-jar---https---githubcom-oharastream-ohara-quickstart-releases-download-untagged-cf0d3622e4d0954dcb7a-ohara-streamappjar-)
 - [Add a pipeline](#add-a-pipeline)
   - [Add a JDBC source connector](#add-a-jdbc-source-connector)
   - [Add Two Topics](#add-two-topics)
@@ -68,7 +67,7 @@
 
 ![setting_network_mac](images/mac_setting_network.png)
 
-## Login OharaStream
+## Login Ohara Quickstart VM
 
 - The default account and password are **ohara** and **oharastream**
 
@@ -184,7 +183,7 @@ OHARA_VER=0.8.0-SNAPSHOT
 
 ## Upload a stream Jar
 
-### [How to download jar?](https://github.com/oharastream/ohara-quickstart/releases/download/untagged-cf0d3622e4d0954dcb7a/ohara-streamapp.jar)
+**In this step, you can upload a stream-app jar for later usage in the Ohara Pipeline. There have a pre-prepared stream-app jar for this Quickstart, you can just download from [here](https://github.com/oharastream/ohara-quickstart/releases/download/untagged-bd7a8b62f72c14937ce5/ohara-streamapp.jar).**
 
 - Click **STREAM JARS**
 - Click **NEW JAR**
