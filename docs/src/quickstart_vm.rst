@@ -8,7 +8,7 @@ Prerequisites
 
 * OS: Windows / Linux / MacOS
 * `VirtualBox <https://www.virtualbox.org/>`_ 5.2+: Oracle VM VirtualBox, is a free and open-source virtual machine.
-* `Ohara Quickstart VM image <https://github.com/oharastream/ohara-quickstart/releases>`__: A OVA(Open Virtual Appliance)
+* `Ohara Quickstart VM image <https://github.com/oharastream/ohara-quickstart/releases>`__: An OVA(Open Virtual Appliance)
   file, a pre-prepared virtual machine image for Ohara quickstart. You can download .ova from the release page.
   For example: ohara-quickstart-0.8.0.ova
 
@@ -38,12 +38,12 @@ Import Quickstart VM
 Setup VirtualBox network adapter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Quickstart VM required a **Host-only network adapter** to be configured so that you can connect from host machine to
+Quickstart VM requires a **Host-only network adapter** to be configured so that you can connect from the host machine to
 guest machine(Quickstart VM).
 
   .. note::
-    Quickstart VM use network adapter ``vboxnet0`` with DHCP Server enabled as **default Host-only adapter**,
-    if there are already have ``vboxnet0`` adapter in your VirtualBox, you can just skip this step.
+    Quickstart VM uses network adapter ``vboxnet0`` with DHCP Server enabled as **default Host-only adapter**,
+    if there is already a ``vboxnet0`` adapter in your VirtualBox, you can just skip this step.
 
 .. tabs::
 
@@ -102,13 +102,13 @@ guest machine(Quickstart VM).
 Install Ohara and other services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the Quickstart VM imported and the network adapter is configured, you can press
+Once the Quickstart VM is imported and the network adapter is configured, you can press
 **Start** to start Quickstart VM and then use ``ohara`` as username and
-``oharastream`` as password to login system.
+``oharastream`` as password to log into the system.
 
 
-Ohara installation will be start automatically if this is your first time to login
-system. This step will be take some times to download Ohara docker images and other
+Ohara installation will be starting automatically if this is your first time to log into the
+system. This step will take some times to download Ohara docker images and other
 backend service images(e.g., PostgreSQL, Ftp)
 
 
@@ -126,7 +126,7 @@ backend service images(e.g., PostgreSQL, Ftp)
      Ohara and service installed
 
 
-After the installation complete, some services connection information should be displayed.
+After the installation is complete, some services connection information should be displayed.
 For example:
 
   .. code-block:: text
@@ -139,15 +139,15 @@ For example:
 
     > Ohara ready on http://192.168.56.105:5050
 
-As we can see, the VM's ip address is `192.168.56.105`.
-And then we can open browser page using `http://192.168.56.105:5050` to open **Ohara Manager**.
+As we can see in the above, the VM's IP address is `192.168.56.105`.
+We can then open the browser and enter this URL in browser's address bar `http://192.168.56.105:5050`. to open  **Ohara Manager**.
 
 Terminology
 -----------
 
 Node
   Ohara node is the basic unit of running service. It can be either physical
-  machine or vm.
+  machine or VM.
 
 Workspace
   Every Ohara workspace contains multiple Ohara services including: Zookeepers, Brokers and Workers
@@ -171,9 +171,9 @@ StreamApp
 Preparation for pipeline creation
 ---------------------------------
 
-  Ohara Manager is the user interface of Ohara. Ohara Manager provide user interface to allow user to design their data
-  pipeline without complex coding. Because we just complete Ohara installation in the Quickstart VM, so we need to do
-  following task before create our first data pipeline.
+  Ohara Manager is the user interface of Ohara. Ohara Manager provides a user interface to allow user to design their data
+  pipeline without complex coding. Because we just complete Ohara installation in the Quickstart VM, so we need to do the
+  following tasks before creating our first data pipeline.
 
   * Add node
   * Create workspace
@@ -190,7 +190,7 @@ Add node
      :alt: node\_list
      :scale: 40%
 
-- In the **New node** dialog, please fill the following fields:
+- In the **New node** dialog, please fill in the following fields:
 
   - Type Node (${IP})
   - Type Port **22**
@@ -225,7 +225,7 @@ Create workspace
     Posgresql jdbc driver would be used by JDBC Source Connector, we need to upload the driver file during the
     workspace creation in current Ohara version. (Please download from `here <https://jdbc.postgresql.org/download.html>`__)
 
-- In the **New workspace** dialog, please fill the following fields:
+- In the **New workspace** dialog, please fill in the following fields:
 
   - Type name **wk00**
   - Select Node **${HOST} or ${IP}**
@@ -263,7 +263,7 @@ Create Two Topics
      :scale: 40%
 
 - Click **NEW TOPIC**
-- In the **New topic** dialog, please fill the following fields:
+- In the **New topic** dialog, please fill in the following fields:
 
   - Type Topic name **topic00**
   - Type patitions **1**
@@ -275,7 +275,8 @@ Create Two Topics
      :scale: 40%
 
 - Click **NEW TOPIC**
-- In the **New topic** dialog, please fill the following fields:
+- In the **New topic** dialog, please fill in the following fields:
+
   - Type Topic name **topic01**
   - Type patitions **1**
   - Type Repliction factor **1**
@@ -294,9 +295,6 @@ Create Two Topics
 
 Upload StreamApp Jar
 ^^^^^^^^^^^^^^^^^^^^
-
-Ohara stream-app is an unparalleled wrap of kafka streams which gives you a straightforward thought to design your
-streaming flow. It offers a simple way to implement and define actions to process data between topics.
 
   .. tip::
     In this step, you can upload a stream-app jar for later usage in the Ohara Pipeline. There have a
@@ -320,10 +318,7 @@ streaming flow. It offers a simple way to implement and define actions to proces
 Create data pipeline
 ---------------------
 
-  Ohara Pipeline allows you to define your data stream, use **Connector** to connect the external storage systems,
-  and use **StreamApp** to customize data transformation and stream processing.
-
-  In this section, we will create a data pipeline using Ohara Manager. The following items are  the tasks that we
+  In this section, we will create a data pipeline using Ohara Manager. The following items are the tasks that we
   will complete in the next few steps.
 
   * Create empty pipeline
@@ -348,7 +343,8 @@ Create empty pipeline
 
      pipeline\_list
 
-- In the **New pipeline** dialog, please fill the following fields:
+- In the **New pipeline** dialog, please fill in the following fields:
+
   - Type Pipeline name **pipeline**
   - Select Workspace name **wk00**
   - Click **ADD**
