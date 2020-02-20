@@ -7,8 +7,7 @@
     {
       "type": "virtualbox-iso",
       "iso_urls": [
-        ".cache/ubuntu-18.04.3-server-amd64.iso",
-        "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.3-server-amd64.iso"
+        "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-{{user `UBUNTU_VER`}}-server-amd64.iso"
       ],
       "iso_checksum_type": "sha256",
       "iso_checksum_url": "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/SHA256SUMS",
