@@ -1,4 +1,5 @@
 UBUNTU_VER=18.04.4
+UBUNTU_CHECKSUM_FILE=`pwd`/images/ubuntu-$(UBUNTU_VER).SHA256SUMS
 CACHE_DIR=.cache
 PACKER_CACHE_DIR=$(CACHE_DIR)/packer_cache
 PACKER_LOG=1
@@ -36,6 +37,7 @@ clean:
 ova:
 	@mkdir -p $(CACHE_DIR)
 	@echo "Ubuntu version: $(UBUNTU_VER)"
+	@echo "Ubuntu checksums: $(UBUNTU_CHECKSUM_FILE)"
 	@echo "Ohara version: $(OHARA_VER)"
 	@echo "Build time: $(BUILD_TIME)"
 	@echo "Start building quickstart VM ova file..."
@@ -44,6 +46,7 @@ ova:
 	  PACKER_LOG_PATH=$(PACKER_LOG_PATH) \
 	  packer build -var "BUILD_TIME=$(BUILD_TIME)" \
 	    -var "UBUNTU_VER=$(UBUNTU_VER)" \
+	    -var "UBUNTU_CHECKSUM_FILE=$(UBUNTU_CHECKSUM_FILE)" \
 	    -var "OHARA_VER=$(OHARA_VER)" \
 	  	packer-quickstart.json
 	@echo "Done."
