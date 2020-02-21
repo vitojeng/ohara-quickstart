@@ -58,9 +58,9 @@ fi
 # Start Ohara services
 ./ohara-configurator.sh
 ./ohara-manager.sh
-./ohara-demo-ftp.sh
-./ohara-demo-postgresql.sh
-./ohara-demo-smb.sh
+#./ohara-demo-ftp.sh
+#./ohara-demo-postgresql.sh
+#./ohara-demo-smb.sh
 
 sleep 3
 
