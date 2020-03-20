@@ -10,7 +10,7 @@ Prerequisites
 * `VirtualBox <https://www.virtualbox.org/>`_ 5.2+: Oracle VM VirtualBox, is a free and open-source virtual machine.
 * `Ohara Quickstart VM image <https://github.com/oharastream/ohara-quickstart/releases>`__: An OVA (Open Virtual Appliance)
   file, a pre-prepared virtual machine image for Ohara quickstart. You can download the image file (`.ova`) from the 
-  `release page <https://ohara.readthedocs.io/>`__
+  `release page <https://github.com/oharastream/ohara-quickstart/releases/>`__
 
     .. figure:: images/download_assets.png
        :alt: download_assets
@@ -113,7 +113,7 @@ the "Start" button to start Quickstart VM and then use the following username an
 - Password: oharastream
 
 
-The installation will be starting automatically if this is your first time logging into the system. This step will take some time to complete as it need to download all Ohara docker images.
+The installation will be starting automatically if this is your first time log in to the system. This step will take some time to complete as it need to download all Ohara docker images.
 
 
   .. figure:: images/vm_ohara_install_1.png
@@ -170,7 +170,7 @@ Topic
 UI overview
 -----------
 
-Before we proceed, here is a screenshot of Ohara Manager where we show you each component's name so you're better prepared for the upcoming tutorial. You can always come back to this overview if you're lost or not sure what we're talking about in the tutorial.
+Before we proceed, here is a screenshot of Ohara Manager where we show you each component's name so you are better prepared for the upcoming tutorial. You can always come back to this overview if you are lost or not sure what we're talking about in the tutorial.
 
   .. figure:: images/ui-overview.png
      :alt: UI overview
@@ -268,7 +268,7 @@ Create a pipeline is fairly simple:
 .. figure:: images/add-a-pipeline.png
    :alt: Add a pipeline
 
-- The new pipeline will be added into the workspace and listed in the Navigator. And just like creating workspace, you're also redirected into the pipeline you just created. 
+- The new pipeline will be added into the workspace and listed in the Navigator. And just like creating workspace, you are also redirected into the pipeline you just created. 
 
 .. figure:: images/add-a-pipeline-done.png
    :alt: Add a pipeline done
@@ -427,13 +427,13 @@ Everything is ready. Let's create the connection like we mentioned earlier: ``FT
 - Hover over FTP source connector and click the "Link" button, and move your mouse to the first topic named "T1" and click on it. A connection should be created:
 
 - Repeat the same step but this time with "T1" to create a connection between T1 and stream
-- And stream -> T2 then T2 -> FTP sink connector. After you're done, you should have a graph like this (Components position have been tweaked so it's better to see the relation between these components):
+- And stream -> T2 then T2 -> FTP sink connector. After you are done, you should have a graph like this (Components position have been tweaked so it's better to see the relation between these components):
 
 .. figure:: images/add-stream-done.png
   :alt: Add stream done
 
 
-You might have noticed that hte Toolbox is disappeared, and that's because we have closed it in order to have a larger space to work with in Paper. You can do this by clicking on the "x" located on the upper right corner of Toolbox.
+You might have noticed that the Toolbox has disappeared, and that is because we have closed it in order to have a larger space to work with in Paper. You can do this by clicking on the "x" located on the upper right corner of Toolbox.
 
 
 .. note::
@@ -490,7 +490,7 @@ We now provide a few debugging tools that can help you pin down unexpected error
   .. figure:: images/event-log-dialog.png
     :alt: Event log dialog
 
-  Another thing that's worth mentioning here is that whenever there are errors occurred. The Event log icon will keep tracked of the errors and display the error log number right on its icon: 
+  Another thing that is worth mentioning here is that whenever there are errors occurred. The Event log icon will keep tracked of the errors and display the error log number right on its icon: 
 
   .. figure:: images/event-log-notification.png
     :alt: Event log notification

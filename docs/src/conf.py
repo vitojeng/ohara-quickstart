@@ -37,8 +37,8 @@ import ConfigParser
 import StringIO
 import os
 
-ohara_version = '0.10.0-SNAPSHOT'
-ohara_branch = 'master'
+ohara_version = '0.9.0-SNAPSHOT'
+ohara_branch = '0.9.x'
 
 
 # -- Ultimate Replace -----------

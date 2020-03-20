@@ -21,9 +21,9 @@
 Documentation
 =============
 
-* `Ohara documentation <https://ohara.readthedocs.io/>`__
-* `Ohara Quickstart VM <https://ohara-quickstart.readthedocs.io/en/latest/quickstart_vm.html>`__
-* `How to build Quickstart VM <https://ohara-quickstart.readthedocs.io/en/latest/how_to_build.html>`__
+* `Ohara documentation <https://ohara.readthedocs.io/en/0.9.x>`__
+* `Ohara Quickstart VM <https://ohara-quickstart.readthedocs.io/en/0.9.x/quickstart_vm.html>`__
+* `How to build Quickstart VM <https://ohara-quickstart.readthedocs.io/en/0.9.x/how_to_build.html>`__
 
 .. toctree::
    :maxdepth: 1
