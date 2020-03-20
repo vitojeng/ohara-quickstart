@@ -2,3 +2,5 @@
 .idea/
 build/
 images/*.iso
+.vscode/
+.DS_Store

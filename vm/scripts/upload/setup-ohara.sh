@@ -36,7 +36,7 @@ if [[ -z "$OHARA_IMAGES" ]]; then
   docker pull "oharastream/broker:$OHARA_VER"
   docker pull "oharastream/zookeeper:$OHARA_VER"
   docker pull "oharastream/connect-worker:$OHARA_VER"
-  docker pull "oharastream/streamapp:$OHARA_VER"
+  docker pull "oharastream/stream:$OHARA_VER"
   docker pull "oharastream/shabondi:$OHARA_VER"
   echo ""
   echo "Download completed!"

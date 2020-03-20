@@ -21,7 +21,7 @@
 Documentation
 =============
 
-* `Ohara document <https://ohara.readthedocs.io/>`__
+* `Ohara documentation <https://ohara.readthedocs.io/>`__
 * `Ohara Quickstart VM <https://ohara-quickstart.readthedocs.io/en/latest/quickstart_vm.html>`__
 * `How to build Quickstart VM <https://ohara-quickstart.readthedocs.io/en/latest/how_to_build.html>`__
 

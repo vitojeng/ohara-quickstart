@@ -37,7 +37,7 @@ import ConfigParser
 import StringIO
 import os
 
-ohara_version = '0.9.0-SNAPSHOT'
+ohara_version = '0.10.0-SNAPSHOT'
 ohara_branch = 'master'
 
 
@@ -66,7 +66,7 @@ ultimate_replacements = {
 # -- Project information -----------------------------------------------------
 
 project = u'Ohara-Quickstart'
-copyright = u'2019, is-land Systems'
+copyright = u'2019, is-land Systems. Version: ' + ohara_version + '(branch: ' + ohara_branch + ')'
 author = u'is-land Systems'
 
 # The short X.Y version
