@@ -56,11 +56,11 @@ if [ "$(docker ps -q -f status=dead)" ]; then
 fi
 
 # Start Ohara services
-./ohara-configurator.sh
-./ohara-manager.sh
-#./ohara-demo-ftp.sh
-#./ohara-demo-postgresql.sh
-#./ohara-demo-smb.sh
+bash ohara-configurator.sh
+bash ohara-manager.sh
+#bash ohara-demo-ftp.sh
+#bash ohara-demo-postgresql.sh
+#bash ohara-demo-smb.sh
 
 sleep 3
 
