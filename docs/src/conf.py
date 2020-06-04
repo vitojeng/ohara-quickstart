@@ -37,7 +37,7 @@ import ConfigParser
 import StringIO
 import os
 
-ohara_version = '0.10.0-SNAPSHOT'
+ohara_version = '0.11.0-SNAPSHOT'
 
 # Branch name(e.g. master or 0.9.x) or Tag name(e.g. 0.9.0)
 # Used as variable $|branch| in the contents, code blocks or links.
